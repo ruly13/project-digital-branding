@@ -1,0 +1,962 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Global Educator Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              display: ["Lexend", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-[#111318]"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden"
+    >
+      <header
+        class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-[#f0f2f4] transition-shadow duration-200 shadow-sm"
+      >
+        <div
+          class="px-4 md:px-10 py-3 flex items-center justify-between max-w-7xl mx-auto w-full"
+        >
+          <div
+            class="flex items-center gap-3 text-[#111318] cursor-pointer"
+            onclick="window.scrollTo(0, 0)"
+          >
+            <div class="size-8 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-3xl">school</span>
+            </div>
+            <h2
+              class="text-lg md:text-xl font-bold leading-tight tracking-[-0.015em]"
+            >
+              Global English
+            </h2>
+          </div>
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-[#111318] hover:text-primary text-sm font-medium transition-colors"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="text-[#111318] hover:text-primary text-sm font-medium transition-colors"
+              href="#expertise"
+              >Expertise</a
+            >
+            <a
+              class="text-[#111318] hover:text-primary text-sm font-medium transition-colors"
+              href="#experience"
+              >Experience</a
+            >
+          </nav>
+          <div class="flex items-center gap-3">
+            <div class="relative group hidden sm:block">
+              <button
+                class="flex items-center gap-1 h-10 px-3 rounded-lg hover:bg-[#f0f2f4] text-[#111318] text-sm font-bold"
+              >
+                <span class="material-symbols-outlined text-xl">language</span>
+                <span class="ml-1">EN</span>
+                <span class="material-symbols-outlined text-sm"
+                  >expand_more</span
+                >
+              </button>
+              <div
+                class="absolute right-0 top-full mt-1 hidden group-hover:block w-32 bg-white border border-[#f0f2f4] shadow-lg rounded-lg overflow-hidden py-1"
+              >
+                <a
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
+                  href="#"
+                  >Español</a
+                >
+                <a
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
+                  href="#"
+                  >中文 (Zh)</a
+                >
+                <a
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
+                  href="#"
+                  >Français</a
+                >
+              </div>
+            </div>
+            <a
+              class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-blue-700 transition-colors shadow-sm"
+              href="#contact"
+            >
+              <span class="truncate">Book a Consultation</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main
+        class="flex flex-col flex-1 w-full max-w-7xl mx-auto px-4 md:px-10 lg:px-20 py-5 gap-16 md:gap-24"
+      >
+        <section class="@container pt-10">
+          <div
+            class="flex flex-col gap-10 px-4 @[480px]:gap-12 @[864px]:flex-row items-center"
+          >
+            <div
+              class="flex flex-col gap-6 flex-1 text-center @[864px]:text-left @[864px]:order-1"
+            >
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-[#111318] text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-[-0.033em]"
+                >
+                  Master English for a
+                  <span class="text-primary">Global World</span>
+                </h1>
+                <h2
+                  class="text-[#616f89] text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto @[864px]:mx-0"
+                >
+                  Tailored English instruction for professionals and students
+                  worldwide. Unlock your potential with personalized coaching.
+                </h2>
+              </div>
+              <div
+                class="flex flex-wrap gap-3 justify-center @[864px]:justify-start"
+              >
+                <a
+                  class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-md hover:bg-blue-700 transition-all hover:scale-105"
+                  href="#expertise"
+                >
+                  View Courses
+                </a>
+                <a
+                  class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white border border-[#dbdfe6] text-[#111318] text-base font-bold hover:bg-[#f0f2f4] transition-colors"
+                  href="#about"
+                >
+                  About Me
+                </a>
+              </div>
+            </div>
+            <div
+              class="w-full flex-1 aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl @[864px]:order-2 transform rotate-1 hover:rotate-0 transition-transform duration-500"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center"
+                data-alt="Modern English teacher in a bright classroom smiling at camera with books in background"
+                style="
+                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBmPVycOZITtjeyZNO8UcIDcjRDqW87FJkfAPFCCC0bDewZ83CBdr-Z6JAHZj3Fqyr_Yxgzs3egrkHrdqxEngqXiit3Vc01404tQVEo2NY2ejQBoOJ19lospmlGGnBVETcWd-LeGsKb-cUqlyqpXTRDljs_LTHF86195sDlEyc2CRSOh9DpzHB-wDWCLNpqWxOQipzuYw917HdhnG1DngLHdlONIzliSaqUTNCsm--kFP_AyTQnrzj9WVg4Fitbfu0smBnXDzsGJ54&quot;);
+                "
+              ></div>
+            </div>
+          </div>
+        </section>
+        <section class="scroll-mt-24" id="about">
+          <div
+            class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-[#f0f2f4]"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+              <div class="md:col-span-4 flex justify-center md:justify-start">
+                <div
+                  class="w-full max-w-[300px] aspect-[3/4] rounded-xl bg-cover bg-center shadow-lg"
+                  data-alt="Professional portrait of the English teacher standing against a plain background"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAIoAxyrsDbAQUeVwUhc_QXMMet_wiJCKtL5RVLbRgXsuKTxAuDe-Vaj-sQGUr_NywB2xQJsYgvtKhriNOoOLzgclvPBiTEr3uCzPJLMR1fGdSaM9QOwj7SvKRN8lP7HTFAMccHl-veH-pa55_fSlWX94beYjY7GV9Wvr5tRl-R0NOmUMwV-_PJlT97G5hiq9orTs3ftChcQx4_u2Y2kMTlJqH8scov_STmrnjn5q6sU6EP0nBdlPMUbnvZ7XQ7WrlLR8kmZ_sRdzw&quot;);
+                  "
+                ></div>
+              </div>
+              <div class="md:col-span-8 flex flex-col justify-center gap-6">
+                <div>
+                  <h3
+                    class="text-primary font-bold tracking-wide uppercase text-sm mb-2"
+                  >
+                    My Philosophy
+                  </h3>
+                  <h2 class="text-3xl font-bold text-[#111318] mb-4">
+                    About Me
+                  </h2>
+                  <p class="text-[#616f89] text-lg leading-relaxed mb-4">
+                    I specialize in
+                    <strong>Communicative Language Teaching</strong>, helping
+                    students build confidence and fluency through real-world
+                    scenarios. My approach is tailored to your unique goals,
+                    whether it's business negotiation, academic writing, or
+                    casual conversation.
+                  </p>
+                  <p class="text-[#616f89] text-base leading-relaxed">
+                    With over 8 years of experience teaching across 3
+                    continents, I bring a culturally sensitive and adaptive
+                    teaching style to every lesson.
+                  </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+                  <div
+                    class="flex items-center gap-3 p-3 rounded-lg bg-[#f0f2f4]/50 border border-[#f0f2f4]"
+                  >
+                    <div
+                      class="text-primary bg-white p-2 rounded-full shadow-sm"
+                    >
+                      <span class="material-symbols-outlined">school</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="font-bold text-sm text-[#111318]"
+                        >Certified TEFL</span
+                      >
+                      <span class="text-xs text-[#616f89]"
+                        >Level 5 Diploma</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 p-3 rounded-lg bg-[#f0f2f4]/50 border border-[#f0f2f4]"
+                  >
+                    <div
+                      class="text-primary bg-white p-2 rounded-full shadow-sm"
+                    >
+                      <span class="material-symbols-outlined"
+                        >business_center</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="font-bold text-sm text-[#111318]"
+                        >Business Expert</span
+                      >
+                      <span class="text-xs text-[#616f89]"
+                        >Corporate Trainer</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center gap-3 p-3 rounded-lg bg-[#f0f2f4]/50 border border-[#f0f2f4]"
+                  >
+                    <div
+                      class="text-primary bg-white p-2 rounded-full shadow-sm"
+                    >
+                      <span class="material-symbols-outlined"
+                        >assignment_turned_in</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="font-bold text-sm text-[#111318]"
+                        >Exam Prep</span
+                      >
+                      <span class="text-xs text-[#616f89]"
+                        >IELTS &amp; TOEFL</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="scroll-mt-24" id="expertise">
+          <div
+            class="bg-[#f8fafc] rounded-2xl p-8 md:p-12 border border-[#f0f2f4]"
+          >
+            <div class="text-center mb-10">
+              <h2
+                class="text-[#111318] text-3xl font-bold leading-tight tracking-[-0.015em]"
+              >
+                Areas of Expertise
+              </h2>
+              <p class="text-[#616f89] mt-2 max-w-2xl mx-auto">
+                Focused instruction designed to help you succeed in specific
+                professional and academic environments.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div class="flex flex-col items-center text-center p-4">
+                <div
+                  class="size-16 bg-white rounded-full flex items-center justify-center text-primary shadow-sm mb-4 border border-[#e5e7eb]"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >handshake</span
+                  >
+                </div>
+                <h3 class="text-[#111318] text-lg font-bold mb-2">
+                  Business English
+                </h3>
+                <p class="text-[#616f89] text-sm leading-relaxed">
+                  Master the art of negotiation and corporate communication.
+                  Build confidence for meetings and professional networking
+                  events.
+                </p>
+              </div>
+              <div class="flex flex-col items-center text-center p-4">
+                <div
+                  class="size-16 bg-white rounded-full flex items-center justify-center text-primary shadow-sm mb-4 border border-[#e5e7eb]"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >menu_book</span
+                  >
+                </div>
+                <h3 class="text-[#111318] text-lg font-bold mb-2">
+                  Exam Preparation
+                </h3>
+                <p class="text-[#616f89] text-sm leading-relaxed">
+                  Comprehensive coaching for IELTS, TOEFL, and Cambridge exams.
+                  Learn strategic techniques to achieve your target band score.
+                </p>
+              </div>
+              <div class="flex flex-col items-center text-center p-4">
+                <div
+                  class="size-16 bg-white rounded-full flex items-center justify-center text-primary shadow-sm mb-4 border border-[#e5e7eb]"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >edit_note</span
+                  >
+                </div>
+                <h3 class="text-[#111318] text-lg font-bold mb-2">
+                  Academic Writing
+                </h3>
+                <p class="text-[#616f89] text-sm leading-relaxed">
+                  Structure your theses and research papers with precision.
+                  Enhance your academic vocabulary and formal writing style.
+                </p>
+              </div>
+              <div class="flex flex-col items-center text-center p-4">
+                <div
+                  class="size-16 bg-white rounded-full flex items-center justify-center text-primary shadow-sm mb-4 border border-[#e5e7eb]"
+                >
+                  <span class="material-symbols-outlined text-3xl">public</span>
+                </div>
+                <h3 class="text-[#111318] text-lg font-bold mb-2">
+                  Intercultural Comms
+                </h3>
+                <p class="text-[#616f89] text-sm leading-relaxed">
+                  Navigate cross-cultural interactions effectively. Develop
+                  sensitivity and adaptability for international business
+                  environments.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="scroll-mt-24" id="experience">
+          <div class="flex flex-col items-center mb-10">
+            <h2
+              class="text-[#111318] text-3xl font-bold leading-tight tracking-[-0.015em] text-center"
+            >
+              Professional Journey
+            </h2>
+            <p class="text-[#616f89] text-center mt-2">
+              A track record of excellence in education
+            </p>
+          </div>
+          <div class="max-w-3xl mx-auto w-full">
+            <div class="grid grid-cols-[60px_1fr] gap-x-4">
+              <div class="flex flex-col items-center gap-1 pt-2">
+                <div
+                  class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary z-10"
+                >
+                  <span class="material-symbols-outlined">temple_buddhist</span>
+                </div>
+                <div
+                  class="w-[2px] bg-[#e5e7eb] h-full grow min-h-[80px]"
+                ></div>
+              </div>
+              <div class="flex flex-col pb-10 pt-2">
+                <div
+                  class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2"
+                >
+                  <h3 class="text-[#111318] text-xl font-bold">
+                    University Lecturer
+                  </h3>
+                  <span
+                    class="text-primary font-medium text-sm bg-primary/5 px-2 py-1 rounded"
+                    >2018 - 2020</span
+                  >
+                </div>
+                <p class="text-[#111318] text-sm font-medium mb-1">
+                  Tokyo, Japan
+                </p>
+                <p class="text-[#616f89] text-base">
+                  Developed curriculum for over 200 undergraduate students
+                  focusing on Academic English and Critical Thinking. Organized
+                  cross-cultural exchange events.
+                </p>
+              </div>
+              <div class="flex flex-col items-center gap-1">
+                <div
+                  class="w-[2px] bg-[#e5e7eb] h-full grow min-h-[20px]"
+                ></div>
+                <div
+                  class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary z-10 my-1"
+                >
+                  <span class="material-symbols-outlined">factory</span>
+                </div>
+                <div
+                  class="w-[2px] bg-[#e5e7eb] h-full grow min-h-[80px]"
+                ></div>
+              </div>
+              <div class="flex flex-col pb-10 pt-2">
+                <div
+                  class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2"
+                >
+                  <h3 class="text-[#111318] text-xl font-bold">
+                    Corporate Trainer
+                  </h3>
+                  <span
+                    class="text-primary font-medium text-sm bg-primary/5 px-2 py-1 rounded"
+                    >2020 - 2022</span
+                  >
+                </div>
+                <p class="text-[#111318] text-sm font-medium mb-1">
+                  Berlin, Germany
+                </p>
+                <p class="text-[#616f89] text-base">
+                  Led intensive Business English workshops for automotive
+                  executives. Focused on negotiation skills, presentation
+                  delivery, and technical vocabulary.
+                </p>
+              </div>
+              <div class="flex flex-col items-center gap-1">
+                <div
+                  class="w-[2px] bg-[#e5e7eb] h-full grow min-h-[20px]"
+                ></div>
+                <div
+                  class="size-10 rounded-full bg-primary text-white flex items-center justify-center shadow-lg z-10 my-1"
+                >
+                  <span class="material-symbols-outlined"
+                    >video_camera_front</span
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col pb-4 pt-2">
+                <div
+                  class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2"
+                >
+                  <h3 class="text-[#111318] text-xl font-bold">
+                    Online Language Coach
+                  </h3>
+                  <span
+                    class="text-primary font-medium text-sm bg-primary/5 px-2 py-1 rounded"
+                    >2022 - Present</span
+                  >
+                </div>
+                <p class="text-[#111318] text-sm font-medium mb-1">
+                  Remote / Worldwide
+                </p>
+                <p class="text-[#616f89] text-base">
+                  Founder of Global English. Coaching professionals from 15+
+                  countries. Utilizing digital tools to provide immersive,
+                  flexible learning experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="scroll-mt-24" id="education">
+          <div
+            class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-[#f0f2f4]"
+          >
+            <div class="text-center mb-10">
+              <h2
+                class="text-[#111318] text-3xl font-bold leading-tight tracking-[-0.015em]"
+              >
+                Educational Background
+              </h2>
+              <p class="text-[#616f89] mt-2 max-w-2xl mx-auto">
+                Academic foundations and continuous professional development.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div
+                class="flex flex-col items-center text-center gap-4 group hover:-translate-y-1 transition-transform duration-300"
+              >
+                <div
+                  class="size-16 rounded-full bg-primary/5 flex items-center justify-center text-primary border border-primary/10 shadow-sm group-hover:bg-primary/10 transition-colors"
+                >
+                  <span class="material-symbols-outlined text-3xl">school</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-[#111318]">
+                    Master of Education
+                  </h3>
+                  <p class="text-sm text-primary font-medium mb-1">
+                    University of London
+                  </p>
+                  <p
+                    class="text-xs text-[#616f89] uppercase tracking-wide mb-3 font-semibold"
+                  >
+                    Honors • Applied Linguistics
+                  </p>
+                  <p class="text-sm text-[#616f89]">
+                    Specialized in sociolinguistics and second language
+                    acquisition methodologies.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center text-center gap-4 group hover:-translate-y-1 transition-transform duration-300"
+              >
+                <div
+                  class="size-16 rounded-full bg-orange-50 flex items-center justify-center text-orange-600 border border-orange-100 shadow-sm group-hover:bg-orange-100 transition-colors"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >history_edu</span
+                  >
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-[#111318]">
+                    BA English Literature
+                  </h3>
+                  <p class="text-sm text-primary font-medium mb-1">
+                    University of Indonesia
+                  </p>
+                  <p
+                    class="text-xs text-[#616f89] uppercase tracking-wide mb-3 font-semibold"
+                  >
+                    Magna Cum Laude
+                  </p>
+                  <p class="text-sm text-[#616f89]">
+                    Focus on post-colonial literature and advanced grammar
+                    structures.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col items-center text-center gap-4 group hover:-translate-y-1 transition-transform duration-300"
+              >
+                <div
+                  class="size-16 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 border border-blue-100 shadow-sm group-hover:bg-blue-100 transition-colors"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >workspace_premium</span
+                  >
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-[#111318]">
+                    Specialized Training
+                  </h3>
+                  <p class="text-sm text-primary font-medium mb-1">
+                    Professional Certification
+                  </p>
+                  <p
+                    class="text-xs text-[#616f89] uppercase tracking-wide mb-3 font-semibold"
+                  >
+                    Continuing Education
+                  </p>
+                  <p class="text-sm text-[#616f89]">
+                    Advanced Phonetics &amp; Digital Pedagogy for remote
+                    learning environments.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full">
+          <div class="bg-[#f0f2f4] rounded-2xl p-8 md:p-12">
+            <h3 class="text-center text-2xl font-bold mb-8 text-[#111318]">
+              What My Students Say
+            </h3>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto"
+            >
+              <div
+                class="bg-white p-8 rounded-xl shadow-sm flex flex-col gap-4 border border-transparent hover:border-primary/10 transition-colors"
+              >
+                <div class="flex gap-1 text-amber-400">
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                </div>
+                <div class="relative">
+                  <span
+                    class="absolute -top-2 -left-2 text-6xl text-primary/10 font-serif leading-none"
+                    >"</span
+                  >
+                  <p
+                    class="text-[#111318] text-base italic leading-relaxed relative z-10 pl-2"
+                  >
+                    The tailored approach to business English helped me secure
+                    my dream role in a multinational company. Highly
+                    recommended!
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-4 mt-auto pt-4 border-t border-gray-50"
+                >
+                  <div
+                    class="size-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold text-xl"
+                  >
+                    M
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold text-[#111318]">Mariani</p>
+                    <p class="text-xs text-[#616f89]">Business Professional</p>
+                  </div>
+                  <div aria-label="Italy Flag" class="ml-auto text-2xl">🇮🇹</div>
+                </div>
+              </div>
+              <div
+                class="bg-white p-8 rounded-xl shadow-sm flex flex-col gap-4 border border-transparent hover:border-primary/10 transition-colors"
+              >
+                <div class="flex gap-1 text-amber-400">
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                </div>
+                <div class="relative">
+                  <span
+                    class="absolute -top-2 -left-2 text-6xl text-primary/10 font-serif leading-none"
+                    >"</span
+                  >
+                  <p
+                    class="text-[#111318] text-base italic leading-relaxed relative z-10 pl-2"
+                  >
+                    A truly culturally sensitive teacher who understands the
+                    struggles of ESL learners. My confidence has soared!
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-4 mt-auto pt-4 border-t border-gray-50"
+                >
+                  <div
+                    class="size-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 font-bold text-xl"
+                  >
+                    R
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold text-[#111318]">Risna Inayah</p>
+                    <p class="text-xs text-[#616f89]">ESL Learner</p>
+                  </div>
+                  <div aria-label="Indonesia Flag" class="ml-auto text-2xl">
+                    🇮🇩
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="scroll-mt-24" id="social-impact">
+          <div
+            class="bg-[#f0f2f4] rounded-2xl p-8 md:p-12 border border-[#e5e7eb]"
+          >
+            <div class="text-center mb-10">
+              <h2
+                class="text-[#111318] text-3xl font-bold leading-tight tracking-[-0.015em]"
+              >
+                Project
+              </h2>
+              <p class="text-[#616f89] mt-2 max-w-2xl mx-auto">
+                Committed to making quality English education accessible through
+                community initiatives and volunteer work.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:auto-rows-[240px]"
+            >
+              <div
+                class="group relative overflow-hidden rounded-xl lg:col-span-2 lg:row-span-2 h-64 md:h-auto bg-gray-200"
+              >
+                <div
+                  aria-label="Teaching in rural area"
+                  class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                  role="img"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDj-Fs7NoYd9K1RJrsE48vPR1Tgb1yUcFSdUZDhauuvh3VLj1EZbIPTFYivm3JXR1HDF53UwHjxyFUQxKZv97-GwWLKjgPsD56dQG62sfu2KERVP4yyUcoXnV-oZsJvm_SOkRjHt3sPjwzr85i1FSYCrITF9uFU_4qXzzD-RZcpc5QWVDPfy-R5Q98bkv82Vfee3Xpo53xymE7KOZKZXCa0RWRG28uwGUQtofMJ9LiZlj7SkAcMtP6HvRBF8jvUL_w6jvBJmwSHyKo&quot;);
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 w-full p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300"
+                >
+                  <span
+                    class="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider text-white uppercase bg-orange-500 rounded-full"
+                    >Volunteer</span
+                  >
+                  <p
+                    class="text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75"
+                  >
+                    Rural Education Initiative - 2023
+                  </p>
+                </div>
+              </div>
+              <div
+                class="group relative overflow-hidden rounded-xl h-64 md:h-auto bg-gray-200"
+              >
+                <div
+                  aria-label="Volunteer Workshop"
+                  class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                  role="img"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBxuezMv39eF3LadBio0Q86CMbb12wJUlvRrMwhB4k6gSK4kwbwWQdqE7mLneNdLfTJGDhpeDyoGxZXYP98CfWwm3OHSiFkx0sAMqs0yiocejDFPPOja6iT839JPGCcUSg7HK8MyotxJfWaYb_otbllRwTK7kU92UKHM664iv8weOJiwWmEz4tL_B1_tDOmad67RXjc6xIzmbF1y3gutNF5J-rolIx3-eTDMJ41zg5na4Y7paCgHhDgoFkhzjFVhL-Ed50h3kzu498&quot;);
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 w-full p-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-300"
+                >
+                  <p
+                    class="text-white font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  >
+                    Volunteer Workshop - Jakarta
+                  </p>
+                </div>
+              </div>
+              <div
+                class="group relative overflow-hidden rounded-xl h-64 md:h-auto bg-gray-200"
+              >
+                <div
+                  aria-label="Exchange Program"
+                  class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                  role="img"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDuiCOIyE8mz7w1PzrpZThSfs5isiECVL6-vDIUE5V1ZCxewXN3O_9l1XPz_Fz4mnia1udosW8iwv-giQLh9J_R0LSY2f2JdsumiZUzJ_hdIcuqcz1yoQajV8_RofO3vhY-3JtmcM6AA7ej-yGXXV_9sm5KX9_lBCxum6uZacCIyJIG7_LnQQOU1QjSjDrQ-zskKnSI_M6NZGx-ct1SokoCUsbcT1AInFJs7TyEvh37BhGQPkej3CH-uhWjawUzBWh7dZTrtko14no&quot;);
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 w-full p-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-300"
+                >
+                  <p
+                    class="text-white font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  >
+                    Cultural Exchange - Tokyo
+                  </p>
+                </div>
+              </div>
+              <div
+                class="group relative overflow-hidden rounded-xl lg:col-span-2 h-64 md:h-auto bg-gray-200"
+              >
+                <div
+                  aria-label="Community Event"
+                  class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                  role="img"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC6CQK46iR09F3oEhM17aPQEgvgwpAI4QVIiojC8BiGhGXW92_7kmsyAZae7m4dfgQhnlACPKVRWjMWFnOWPcNe9-7KgZTXbKCPRhJKQN0u3QkKpGmUUbsNHPZhFPXTU5CfWTcuslEaVIEV2ZbvlNO6QZZXeHgUfN-1mfdBej7WDC5P-3TYmz7DlSXZjJNuRUUnq6yTamnVtBu3Rzat7a5Yr9eKuUIEOd8CgyvCwQHEu0aRFgc6qV5tCzcEz2GXo8KBr_W3YqZ7jUk&quot;);
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 w-full p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300"
+                >
+                  <span
+                    class="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider text-white uppercase bg-blue-600 rounded-full"
+                    >Community</span
+                  >
+                  <p
+                    class="text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75"
+                  >
+                    Global Citizenship Seminar
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="scroll-mt-24 mb-10" id="contact">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-2">
+                <h2 class="text-[#111318] text-3xl font-bold">Get in Touch</h2>
+                <p class="text-[#616f89] text-lg">
+                  Ready to take your English to the next level? Book a
+                  consultation or send me a message.
+                </p>
+              </div>
+              <div class="flex flex-col gap-4 mt-4">
+                <a
+                  class="flex items-center gap-4 p-4 rounded-xl bg-white border border-[#f0f2f4] hover:shadow-md transition-all group"
+                  href="#"
+                >
+                  <div
+                    class="size-12 rounded-full bg-green-50 flex items-center justify-center text-green-600 group-hover:bg-green-100 transition-colors"
+                  >
+                    <span class="material-symbols-outlined">chat</span>
+                  </div>
+                  <div>
+                    <p class="font-bold text-[#111318]">WhatsApp</p>
+                    <p class="text-sm text-[#616f89]">+44 7000 123456</p>
+                  </div>
+                </a>
+                <a
+                  class="flex items-center gap-4 p-4 rounded-xl bg-white border border-[#f0f2f4] hover:shadow-md transition-all group"
+                  href="#"
+                >
+                  <div
+                    class="size-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-100 transition-colors"
+                  >
+                    <span class="material-symbols-outlined">work</span>
+                  </div>
+                  <div>
+                    <p class="font-bold text-[#111318]">LinkedIn</p>
+                    <p class="text-sm text-[#616f89]">Connect professionally</p>
+                  </div>
+                </a>
+                <a
+                  class="flex items-center gap-4 p-4 rounded-xl bg-white border border-[#f0f2f4] hover:shadow-md transition-all group"
+                  href="#"
+                >
+                  <div
+                    class="size-12 rounded-full bg-purple-50 flex items-center justify-center text-purple-600 group-hover:bg-purple-100 transition-colors"
+                  >
+                    <span class="material-symbols-outlined">mail</span>
+                  </div>
+                  <div>
+                    <p class="font-bold text-[#111318]">Email</p>
+                    <p class="text-sm text-[#616f89]">
+                      hello@globalenglish.com
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="bg-white p-6 md:p-8 rounded-2xl border border-[#f0f2f4] shadow-sm"
+            >
+              <form class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <label class="text-sm font-bold text-[#111318]" for="name"
+                    >Name</label
+                  >
+                  <input
+                    class="w-full h-12 rounded-lg border border-[#dbdfe6] bg-white px-4 text-base focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                    id="name"
+                    placeholder="Your name"
+                    type="text"
+                  />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-sm font-bold text-[#111318]" for="email"
+                    >Email</label
+                  >
+                  <input
+                    class="w-full h-12 rounded-lg border border-[#dbdfe6] bg-white px-4 text-base focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                    id="email"
+                    placeholder="your@email.com"
+                    type="email"
+                  />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-sm font-bold text-[#111318]" for="message"
+                    >Message</label
+                  >
+                  <textarea
+                    class="w-full rounded-lg border border-[#dbdfe6] bg-white p-4 text-base focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
+                    id="message"
+                    placeholder="Tell me about your learning goals..."
+                    rows="4"
+                  ></textarea>
+                </div>
+                <button
+                  class="mt-2 w-full h-12 rounded-lg bg-primary text-white font-bold text-base hover:bg-blue-700 transition-colors shadow-md"
+                  type="button"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-[#111318] text-white py-12 px-4 md:px-10">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8"
+        >
+          <div class="flex flex-col gap-2 text-center md:text-left">
+            <div
+              class="flex items-center justify-center md:justify-start gap-2"
+            >
+              <span class="material-symbols-outlined text-primary text-2xl"
+                >school</span
+              >
+              <span class="font-bold text-lg">Global English</span>
+            </div>
+            <p class="text-gray-400 text-sm">
+              Empowering students worldwide since 2018.
+            </p>
+          </div>
+          <div class="flex gap-6">
+            <a
+              class="text-gray-400 hover:text-white transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined">public</span>
+            </a>
+            <a
+              class="text-gray-400 hover:text-white transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined">alternate_email</span>
+            </a>
+            <a
+              class="text-gray-400 hover:text-white transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined">share</span>
+            </a>
+          </div>
+          <div class="flex gap-6 text-sm text-gray-400">
+            <a class="hover:text-white transition-colors" href="#"
+              >Privacy Policy</a
+            >
+            <a class="hover:text-white transition-colors" href="#"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+        <div
+          class="max-w-7xl mx-auto mt-8 border-t border-gray-800 pt-8 text-center text-xs text-gray-500"
+        >
+          © 2024 Rohmat Choiruly Anwar. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
