@@ -30,7 +30,7 @@ export default function HeroSection() {
                          <div 
                             className="absolute inset-0 bg-cover bg-center"
                             style={{
-                                backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuBmPVycOZITtjeyZNO8UcIDcjRDqW87FJkfAPFCCC0bDewZ83CBdr-Z6JAHZj3Fqyr_Yxgzs3egrkHrdqxEngqXiit3Vc01404tQVEo2NY2ejQBoOJ19lospmlGGnBVETcWd-LeGsKb-cUqlyqpXTRDljs_LTHF86195sDlEyc2CRSOh9DpzHB-wDWCLNpqWxOQipzuYw917HdhnG1DngLHdlONIzliSaqUTNCsm--kFP_AyTQnrzj9WVg4Fitbfu0smBnXDzsGJ54")`
+                                backgroundImage: `url("/img/foto utama 4/fotoutama.jpeg")`
                             }}
                          >
                          </div>

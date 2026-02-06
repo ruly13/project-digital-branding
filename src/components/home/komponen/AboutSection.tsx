@@ -1,5 +1,25 @@
+"use client";
+
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+
+const images = [
+    "/img/foto utama 4/slider1.jpg",
+    "/img/foto utama 4/slider2.jpeg",
+    "/img/foto utama 4/slider3.jpeg"
+];
 
 export default function AboutSection() {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 3000); // Change image every 3 seconds
+
+        return () => clearInterval(interval);
+    }, []);
+
     const stats = [
         { icon: "🎓", label: "Certified TEFL", sub: "Level 5 Diploma" },
         { icon: "💼", label: "Business Expert", sub: "Corporate Trainer" },
@@ -13,12 +33,20 @@ export default function AboutSection() {
         <div className="bg-white rounded-2xl p-8 lg:p-12 border border-[#f0f2f4] shadow-sm">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
                 <div className="md:col-span-4 flex justify-center md:justify-start">
-                    <div 
-                        className="w-full max-w-[300px] aspect-[3/4] rounded-xl bg-cover bg-center shadow-lg"
-                        style={{
-                            backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIoAxyrsDbAQUeVwUhc_QXMMet_wiJCKtL5RVLbRgXsuKTxAuDe-Vaj-sQGUr_NywB2xQJsYgvtKhriNOoOLzgclvPBiTEr3uCzPJLMR1fGdSaM9QOwj7SvKRN8lP7HTFAMccHl-veH-pa55_fSlWX94beYjY7GV9Wvr5tRl-R0NOmUMwV-_PJlT97G5hiq9orTs3ftChcQx4_u2Y2kMTlJqH8scov_STmrnjn5q6sU6EP0nBdlPMUbnvZ7XQ7WrlLR8kmZ_sRdzw")`
-                        }}
-                    >
+                    <div className="w-full max-w-[300px] aspect-[3/4] rounded-xl shadow-lg relative overflow-hidden">
+                        {images.map((img, index) => (
+                            <Image
+                                key={img}
+                                src={img}
+                                alt={`Profile Eva Lastiani ${index + 1}`}
+                                fill
+                                className={`object-cover object-center transition-opacity duration-1000 ease-in-out ${
+                                    index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                                }`}
+                                priority={index === 0} // Load gambar pertama secepat mungkin
+                                sizes="(max-width: 768px) 100vw, 300px"
+                            />
+                        ))}
                     </div>
                 </div>
             
