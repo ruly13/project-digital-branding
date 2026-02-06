@@ -29,7 +29,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-white scroll-mt-24">
+    <section id="contact" className="py-12 md:py-24 bg-white scroll-mt-24">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
             {/* Left Column */}

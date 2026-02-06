@@ -6,7 +6,7 @@ export default function ExperienceSection() {
 
   return (
 
-    <section id="experience" className="py-24 bg-white scroll-mt-24">
+    <section id="experience" className="py-12 md:py-24 bg-white scroll-mt-24">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="flex flex-col items-center mb-16">
            <h2 className="text-[#111318] text-3xl font-bold leading-tight tracking-[-0.015em] text-center">Professional Journey</h2>

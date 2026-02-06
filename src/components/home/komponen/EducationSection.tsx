@@ -6,7 +6,7 @@ export default function EducationSection() {
 
   return (
 
-    <section id="education" className="py-24 bg-white scroll-mt-24 relative ">
+    <section id="education" className="py-12 md:py-24 bg-white scroll-mt-24 relative ">
        {/* Background decoration removed as per reference code which uses clean white */}
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-10">

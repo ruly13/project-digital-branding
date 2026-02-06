@@ -8,7 +8,7 @@ export default function AboutSection() {
 
   return (
 
-    <section id="about" className="py-24 bg-white scroll-mt-24">
+    <section id="about" className="py-12 md:py-24 bg-white scroll-mt-24">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="bg-white rounded-2xl p-8 lg:p-12 border border-[#f0f2f4] shadow-sm">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10">

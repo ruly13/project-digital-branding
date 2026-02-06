@@ -11,11 +11,9 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#f0f2f4] shadow-sm transition-all duration-300">
       <div className="container mx-auto px-6 max-w-7xl h-[88px] flex items-center justify-between relative">
         <Link href="/" className="flex items-center gap-3">
-            <div className="size-10 bg-primary rounded-lg flex items-center justify-center shadow-[0px_4px_12px_rgba(19,91,236,0.2)]">
-                <span className="material-symbols-outlined text-white">public</span>
-            </div>
+            
           <span className="text-xl font-bold tracking-tight text-[#111318]">
-            <strong>Eva</strong>Lastiani
+            <strong>Eva</strong> Lastiani
           </span>
         </Link>
         
