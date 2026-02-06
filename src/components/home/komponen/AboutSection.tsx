@@ -27,8 +27,7 @@ export default function AboutSection() {
                         <h3 className="text-primary font-bold tracking-wide uppercase text-sm mb-2">My Philosophy</h3>
                         <h2 className="text-3xl font-bold text-[#111318] mb-4">About Me</h2>
                         <div className="text-[#616f89] text-lg leading-relaxed mb-4">
-                            I specialize in <strong>Communicative Language Teaching</strong>, helping students build confidence and fluency through real-world scenarios. My approach is tailored to your unique goals, whether it&apos;s business negotiation, academic writing, or casual conversation.
-                        </div>
+                           Eva is an educator. She loves sharing knowledge, not only english knowledge but also anything that increase live values. She loves meeting new people, challenges herlself to try something new. Always levels up and scale up, and experiences herself in different ways    </div>
                         <p className="text-[#616f89] text-base leading-relaxed">
                             With over 8 years of experience teaching across 3 continents, I bring a culturally sensitive and adaptive teaching style to every lesson.
                         </p>

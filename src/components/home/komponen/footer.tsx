@@ -1,5 +1,6 @@
 
-import Link from 'next/link';
+
+import { Instagram, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
 
     <footer className="bg-background-dark text-white py-16 border-t border-[#1e2736]">
       <div className="container mx-auto px-6 max-w-7xl">
-        <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-12">
+        <div className="relative flex flex-col md:flex-row justify-between items-end gap-8 mb-12">
             
             {/* Left: Logo & Tagline */}
             <div className="flex flex-col gap-4 w-full md:w-auto">
@@ -15,33 +16,36 @@ export default function Footer() {
                      <div className="size-8 bg-primary rounded-lg flex items-center justify-center shadow-[0px_4px_12px_rgba(19,91,236,0.4)]">
                         <span className="material-symbols-outlined text-white text-lg">school</span>
                      </div>
-                     <span className="text-xl font-bold tracking-tight text-white">Global English</span>
+                     <span className="text-xl font-bold tracking-tight text-white">Eva Lastiani</span>
                 </div>
-                <p className="text-sm text-[#94a3b8] max-w-xs">Empowering students worldwide since 2012.</p>
+                <p className="text-sm text-[#94a3b8] max-w-xs">Educator dedicated to inspiring students and fostering a love for learning.</p>
             </div>
 
             {/* Center: Social Icons */}
-            <div className="flex gap-6 w-full md:w-auto justify-start md:justify-center">
-                 <a href="#" className="text-[#94a3b8] hover:text-white transition-colors">
-                    <span className="material-symbols-outlined text-2xl">public</span>
+            <div className="flex gap-4 w-full md:w-auto justify-center md:absolute md:left-1/2 md:-translate-x-1/2 md:bottom-2">
+                 <a href="#" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="Instagram">
+                    <Instagram className="size-6" />
                  </a>
-                 <a href="#" className="text-[#94a3b8] hover:text-white transition-colors">
-                    <span className="material-symbols-outlined text-2xl">alternate_email</span>
+                 <a href="#" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="TikTok">
+                    {/* Custom TikTok SVG */}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-6">
+                        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                    </svg>
                  </a>
-                 <a href="#" className="text-[#94a3b8] hover:text-white transition-colors">
-                    <span className="material-symbols-outlined text-2xl">share</span>
+                 <a href="#" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="LinkedIn">
+                    <Linkedin className="size-6" />
+                 </a>
+                 <a href="mailto:rohmatchoiruly@gmail.com" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="Email">
+                    <Mail className="size-6" />
                  </a>
             </div>
             
-            {/* Right: Links */}
-            <div className="flex gap-8 text-sm font-medium text-[#94a3b8] w-full md:w-auto justify-start md:justify-end">
-                <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-                <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
-            </div>
+
         </div>
         
-        <div className="border-t border-[#2e3b52] pt-8 flex flex-col items-center justify-center text-xs text-[#64748b]">
-             <p>&copy; {new Date().getFullYear()} Global English. All rights reserved.</p>
+        <div className="border-t border-[#2e3b52] pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-[#64748b]">
+             <p className="order-2 md:order-1">&copy; {new Date().getFullYear()} Eva Lastiani. All rights reserved.</p>
+             <p className="order-1 md:order-2 mb-4 md:mb-0">Designed & Built by <a href="https://www.rohmatchoiruly.site/" className="text-[#94a3b8] hover:text-white transition-colors">rohmat choiruly anwar</a></p>
         </div>
       </div>
     </footer>

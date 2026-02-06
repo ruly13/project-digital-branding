@@ -9,33 +9,23 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#f0f2f4] shadow-sm transition-all duration-300">
-      <div className="container mx-auto px-6 max-w-7xl h-[88px] flex items-center justify-between">
+      <div className="container mx-auto px-6 max-w-7xl h-[88px] flex items-center justify-between relative">
         <Link href="/" className="flex items-center gap-3">
             <div className="size-10 bg-primary rounded-lg flex items-center justify-center shadow-[0px_4px_12px_rgba(19,91,236,0.2)]">
                 <span className="material-symbols-outlined text-white">public</span>
             </div>
           <span className="text-xl font-bold tracking-tight text-[#111318]">
-            Global English
+            <strong>Eva</strong>Lastiani
           </span>
         </Link>
         
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
           <Link href="#about" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">About</Link>
           <Link href="#expertise" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Expertise</Link>
+          <Link href="#education" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Education</Link>
           <Link href="#experience" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Experience</Link>
         </div>
 
-        <div className="hidden md:flex items-center gap-6">
-            <div className="flex items-center gap-2 text-sm font-bold text-[#616f89] cursor-pointer hover:text-[#111318] transition-colors bg-[#f0f2f4] px-3 py-2 rounded-lg">
-                <span className="material-symbols-outlined text-lg">public</span>
-                <span>EN</span>
-                <span className="material-symbols-outlined text-sm">expand_more</span>
-            </div>
-            <Link href="#contact" className="px-6 py-3 bg-primary text-white text-sm font-bold rounded-lg hover:bg-blue-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-                Book a Consultation
-            </Link>
-        </div>
-        
         <button 
           className="md:hidden text-gray-900 z-50 relative"
           onClick={() => setIsMenuOpen(!isMenuOpen)}

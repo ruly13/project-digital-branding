@@ -1,6 +1,8 @@
 
-export default function ExperienceSection() {
+import { getExperiences } from "../../../services/experienceService";
 
+export default function ExperienceSection() {
+  const experiences = getExperiences();
 
   return (
 
@@ -13,60 +15,39 @@ export default function ExperienceSection() {
         
         <div className="max-w-3xl mx-auto w-full">
            <div className="grid grid-cols-[60px_1fr] gap-x-4">
-              {/* Item 1 */}
-              <div className="flex flex-col items-center gap-1 pt-2">
-                 <div className="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary z-10">
-                    <span className="text-xl">🏛️</span>
-                 </div>
-                 <div className="w-[2px] bg-[#e5e7eb] h-full grow min-h-[80px]"></div>
-              </div>
-              <div className="flex flex-col pb-10 pt-2">
-                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                    <h3 className="text-[#111318] text-xl font-bold">University Lecturer</h3>
-                    <span className="text-primary font-medium text-sm bg-primary/5 px-2 py-1 rounded">2018 - 2020</span>
-                 </div>
-                 <p className="text-[#111318] text-sm font-medium mb-1">Tokyo, Japan</p>
-                 <p className="text-[#616f89] text-base leading-relaxed">
-                    Developed curriculum for over 200 undergraduate students focusing on Academic English and Critical Thinking. Organized cross-cultural exchange events.
-                 </p>
-              </div>
+              {experiences.map((exp, index) => (
+                 <div key={exp.id} className="contents">
+                    <div className="relative flex flex-col items-center">
+                       {/* Line connecting to previous item */}
+                       {index > 0 && (
+                          <div className="absolute top-0 w-[2px] bg-[#e5e7eb] h-[20px] -z-10"></div>
+                       )}
+                       
+                       {/* Icon */}
+                       <div className="size-10 rounded-full flex items-center justify-center z-10 bg-primary/10 text-primary">
+                          <span className="material-symbols-outlined text-xl">
+                              {exp.type === 'education' ? 'school' : 'work'}
+                          </span>
+                       </div>
 
-              {/* Item 2 */}
-              <div className="flex flex-col items-center gap-1">
-                 <div className="w-[2px] bg-[#e5e7eb] h-full grow min-h-[20px]"></div>
-                 <div className="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary z-10 my-1">
-                    <span className="text-xl">💼</span>
-                 </div>
-                 <div className="w-[2px] bg-[#e5e7eb] h-full grow min-h-[80px]"></div>
-              </div>
-              <div className="flex flex-col pb-10 pt-2">
-                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                    <h3 className="text-[#111318] text-xl font-bold">Corporate Trainer</h3>
-                    <span className="text-primary font-medium text-sm bg-primary/5 px-2 py-1 rounded">2020 - 2022</span>
-                 </div>
-                 <p className="text-[#111318] text-sm font-medium mb-1">Berlin, Germany</p>
-                 <p className="text-[#616f89] text-base leading-relaxed">
-                    Led intensive Business English workshops for automotive executives. Focused on negotiation skills, presentation delivery, and technical vocabulary.
-                 </p>
-              </div>
+                       {/* Line connecting to next item */}
+                       {index < experiences.length - 1 && (
+                          <div className="absolute top-[20px] bottom-0 w-[2px] bg-[#e5e7eb] -z-10"></div>
+                       )}
+                    </div>
 
-              {/* Item 3 */}
-              <div className="flex flex-col items-center gap-1">
-                 <div className="w-[2px] bg-[#e5e7eb] h-full grow min-h-[20px]"></div>
-                 <div className="size-10 rounded-full bg-primary text-white flex items-center justify-center shadow-lg z-10 my-1">
-                    <span className="text-xl">💻</span>
+                    <div className={`flex flex-col ${index < experiences.length - 1 ? 'pb-10' : 'pb-4'} pt-2`}>
+                       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                          <h3 className="text-[#111318] text-xl font-bold">{exp.role}</h3>
+                          <span className="text-primary font-medium text-sm bg-primary/5 px-2 py-1 rounded">{exp.period}</span>
+                       </div>
+                       <p className="text-[#111318] text-sm font-medium mb-1">{exp.company}</p>
+                       <p className="text-[#616f89] text-base leading-relaxed">
+                          {exp.description}
+                       </p>
+                    </div>
                  </div>
-              </div>
-              <div className="flex flex-col pb-4 pt-2">
-                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                    <h3 className="text-[#111318] text-xl font-bold">Online Language Coach</h3>
-                    <span className="text-primary font-medium text-sm bg-primary/5 px-2 py-1 rounded">2022 - Present</span>
-                 </div>
-                 <p className="text-[#111318] text-sm font-medium mb-1">Remote / Worldwide</p>
-                 <p className="text-[#616f89] text-base leading-relaxed">
-                    Founder of Global English. Coaching professionals from 15+ countries. Utilizing digital tools to provide immersive, flexible learning experiences.
-                 </p>
-              </div>
+              ))}
            </div>
         </div>
       </div>
