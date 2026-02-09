@@ -20,64 +20,59 @@ export default function AboutSection() {
         return () => clearInterval(interval);
     }, []);
 
-    const stats = [
-        { icon: "🎓", label: "Certified TEFL", sub: "Level 5 Diploma" },
-        { icon: "💼", label: "Business Expert", sub: "Corporate Trainer" },
-        { icon: "✅", label: "1000+ Hrs", sub: "Teaching Exp" },
-    ];
+    return (
+        <section id="about" className="py-20 md:py-28 bg-white relative overflow-hidden scroll-mt-20">
+            {/* Decorative Background Elements */}
+            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-purple-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
-  return (
-
-    <section id="about" className="py-12 md:py-24 bg-white scroll-mt-24">
-      <div className="container mx-auto px-6 max-w-7xl">
-        <div className="bg-white rounded-2xl p-8 lg:p-12 border border-[#f0f2f4] shadow-sm">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-                <div className="md:col-span-4 flex justify-center md:justify-start">
-                    <div className="w-full max-w-[300px] aspect-[3/4] rounded-xl shadow-lg relative overflow-hidden">
-                        {images.map((img, index) => (
-                            <Image
-                                key={img}
-                                src={img}
-                                alt={`Profile Eva Lastiani ${index + 1}`}
-                                fill
-                                className={`object-cover object-center transition-opacity duration-1000 ease-in-out ${
-                                    index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-                                }`}
-                                priority={index === 0} // Load gambar pertama secepat mungkin
-                                sizes="(max-width: 768px) 100vw, 300px"
-                            />
-                        ))}
-                    </div>
-                </div>
-            
-                <div className="md:col-span-8 flex flex-col justify-center gap-6">
-                    <div>
-                        <h3 className="text-primary font-bold tracking-wide uppercase text-sm mb-2">My Philosophy</h3>
-                        <h2 className="text-3xl font-bold text-[#111318] mb-4">About Me</h2>
-                        <div className="text-[#616f89] text-lg leading-relaxed mb-4">
-                           Eva is an educator. She loves sharing knowledge, not only english knowledge but also anything that increase live values. She loves meeting new people, challenges herlself to try something new. Always levels up and scale up, and experiences herself in different ways    </div>
-                        <p className="text-[#616f89] text-base leading-relaxed">
-                            With over 8 years of experience teaching across 3 continents, I bring a culturally sensitive and adaptive teaching style to every lesson.
-                        </p>
-                    </div>
+            <div className="container mx-auto px-6 max-w-7xl relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
-                        {stats.map((stat, index) => (
-                            <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-[#f0f2f4]/50 border border-[#f0f2f4]">
-                                <div className="text-primary bg-white p-2 rounded-full shadow-sm flex items-center justify-center text-xl">
-                                    {stat.icon}
-                                </div>
-                                <div className="flex flex-col">
-                                    <span className="font-bold text-sm text-[#111318]">{stat.label}</span>
-                                    <span className="text-xs text-[#616f89]">{stat.sub}</span>
-                                </div>
+                    {/* Left Column: Image Slider */}
+                    <div className="relative group flex justify-center lg:justify-end">
+                        <div className="relative w-full max-w-md aspect-[3/4]">
+                            {/* Decorative frame/backdrop */}
+                            <div className="absolute -inset-4 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl rotate-2 opacity-70 group-hover:rotate-1 transition-transform duration-500"></div>
+                            
+                            <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                                {images.map((img, index) => (
+                                    <Image
+                                        key={img}
+                                        src={img}
+                                        alt={`Profile Eva Lastiani ${index + 1}`}
+                                        fill
+                                        className={`object-cover object-top transition-opacity duration-1000 ease-in-out ${
+                                            index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                                        }`}
+                                        priority={index === 0}
+                                        sizes="(max-width: 768px) 100vw, 500px"
+                                    />
+                                ))}
+                                {/* Overlay gradient for depth */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                             </div>
-                        ))}
+                        </div>
+                    </div>
+            
+                    {/* Right Column: Content */}
+                    <div className="flex flex-col justify-center">
+                        <div className="mb-8">
+                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                                About Me
+                            </h2>
+                            <div className="text-slate-600 text-lg leading-relaxed space-y-4">
+                                <p>
+                                    I am a passionate and dedicated English teacher with <span className="font-semibold text-slate-900">15 years of experience</span> teaching diverse learners across various age groups and proficiency levels.
+                                </p>
+                                <p>
+                                    Skilled in designing engaging lesson plans, integrating technology into the classroom, and fostering a positive learning environment. Committed to helping students develop strong reading, writing, speaking, and critical thinking skills in English.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 }

@@ -2,24 +2,24 @@
 export default function ExpertiseSection() {
   const expertise = [
     {
-      title: "Business English",
-      description: "Master the art of negotiation and corporate communication. Build confidence for meetings and professional networking events.",
-      icon: "💎"
+      title: "Computer Literacy",
+      description: "Proficient in office applications and digital learning tools",
+      icon: "💻"
     },
     {
-      title: "Exam Preparation",
-      description: "Comprehensive coaching for IELTS, TOEFL, and Cambridge exams. Learn strategic techniques to achieve your target band score.",
-      icon: "📑"
+      title: "Communication Skill",
+      description: "Expert in public relations and professional correspondence.",
+      icon: "🗣️"
     },
     {
-      title: "Academic Writing",
-      description: "Structure your thesis and research papers with precision. Enhance your academic vocabulary and formal writing style.",
-      icon: "✒️"
+      title: "Office Practice",
+      description: "Skilled in administration, scheduling, and office management.",
+      icon: "💼"
     },
     {
-      title: "International Comm.",
-      description: "Navigate cross-cultural interactions effectively. Develop sensitivity and adaptability for international business environments.",
-      icon: "🌍"
+      title: "Teaching All Ages",
+      description: "Extensive experience teaching from kids to adult students.",
+      icon: "👨‍🏫"
     }
   ];
 
@@ -29,9 +29,9 @@ export default function ExpertiseSection() {
       <div className="container mx-auto px-6 max-w-7xl">
          <div className="bg-[#f8fafc] rounded-2xl p-8 md:p-12 border border-[#f0f2f4]">
             <div className="text-center mb-10">
-              <h2 className="text-[#111318] text-3xl font-bold leading-tight tracking-[-0.015em]">Areas of Expertise</h2>
+              <h2 className="text-[#111318] text-3xl font-bold leading-tight tracking-[-0.015em]">Expertise</h2>
               <p className="text-[#616f89] mt-2 max-w-2xl mx-auto">
-                Focused instruction designed to help you succeed in specific professional and academic environments.
+                Teaching is my passion. I love sharing knowledges, not only English knowledges but also all things relate to something to improve life values.
               </p>
             </div>
 

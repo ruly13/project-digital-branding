@@ -9,19 +9,11 @@ export default function HeroSection() {
             <div className="w-full lg:w-1/2 text-center lg:text-left">
                 <div className="flex flex-col gap-4">
                     <h1 className="text-[#111318] text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-[-0.033em] mb-6">
-                        Master English for a <span className="text-primary">Global World</span>
+                        Senior Educator & Branch Manager  <span className="text-primary">with 20+ Years of Experience</span>
                     </h1>
                     <h2 className="text-[#616f89] text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8">
-                        Tailored English instruction for professionals and students worldwide. Unlock your potential with personalized coaching.
+                        Empowering students through English literacy and community leadership in Madiun and Magetan.
                     </h2>
-                </div>
-                <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                    <Link href="#courses" className="flex items-center justify-center px-8 py-3 bg-primary text-white font-bold rounded-lg hover:bg-blue-700 transition-all hover:scale-105 shadow-md">
-                        View Courses
-                    </Link>
-                    <Link href="#about" className="flex items-center justify-center px-8 py-3 bg-white text-[#111318] border border-[#dbdfe6] font-bold rounded-lg hover:bg-[#f0f2f4] transition-colors">
-                        About Me
-                    </Link>
                 </div>
             </div>
             <div className="w-full lg:w-1/2 relative">
