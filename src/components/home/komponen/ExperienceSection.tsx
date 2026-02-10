@@ -26,7 +26,7 @@ export default function ExperienceSection() {
                        {/* Icon */}
                        <div className="size-10 rounded-full flex items-center justify-center z-10 bg-primary/10 text-primary">
                           <span className="material-symbols-outlined text-xl">
-                              {exp.type === 'education' ? 'school' : 'work'}
+                              {exp.icon || (exp.type === 'education' ? 'school' : 'work')}
                           </span>
                        </div>
 

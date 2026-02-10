@@ -45,7 +45,7 @@ export default function CertificationsSection() {
                                     src={cert.image} 
                                     alt={cert.title}
                                     fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-0 sm:opacity-100" // Hide if dummy path is broken
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     onError={(e) => {
                                         // Optional: Handle error by hiding image
                                         const target = e.target as HTMLImageElement;
@@ -79,10 +79,6 @@ export default function CertificationsSection() {
                             </div>
                         </div>
                     ))}
-                </div>
-                
-                <div className="mt-12 text-center text-slate-500 text-sm">
-                    * Original certificates available upon request.
                 </div>
             </div>
 

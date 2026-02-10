@@ -11,21 +11,22 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#f0f2f4] shadow-sm transition-all duration-300">
       <div className="container mx-auto px-6 max-w-7xl h-[88px] flex items-center justify-between relative">
         <Link href="/" className="flex items-center gap-3">
-            
           <span className="text-xl font-bold tracking-tight text-[#111318]">
             <strong>Eva</strong> Lastiani
           </span>
         </Link>
         
-        <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+        <div className="hidden lg:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
           <Link href="#about" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">About</Link>
-          <Link href="#expertise" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Expertise</Link>
-          <Link href="#education" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Education</Link>
           <Link href="#experience" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Experience</Link>
+          <Link href="#education" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Education</Link>
+          <Link href="#certifications" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Certifications</Link>
+          <Link href="#social-impact" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Projects</Link>
+          <Link href="#contact" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Contact</Link>
         </div>
 
         <button 
-          className="md:hidden text-gray-900 z-50 relative"
+          className="lg:hidden text-gray-900 z-50 relative ml-auto"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
@@ -42,44 +43,49 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 z-40 bg-white pt-24 px-6 space-y-6">
+        <div className="lg:hidden fixed inset-0 z-40 bg-white pt-24 px-6 space-y-6 overflow-y-auto">
             <Link 
               href="#about" 
-              className="block text-2xl font-bold text-gray-900 hover:text-blue-600"
+              className="block text-xl font-bold text-gray-900 hover:text-blue-600 border-b border-gray-100 pb-2"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link 
-              href="#expertise" 
-              className="block text-2xl font-bold text-gray-900 hover:text-blue-600"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Expertise
-            </Link>
-            <Link 
               href="#experience" 
-              className="block text-2xl font-bold text-gray-900 hover:text-blue-600"
+              className="block text-xl font-bold text-gray-900 hover:text-blue-600 border-b border-gray-100 pb-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Experience
             </Link>
             <Link 
+              href="#education" 
+              className="block text-xl font-bold text-gray-900 hover:text-blue-600 border-b border-gray-100 pb-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Education
+            </Link>
+            <Link 
+              href="#certifications" 
+              className="block text-xl font-bold text-gray-900 hover:text-blue-600 border-b border-gray-100 pb-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Certifications
+            </Link>
+            <Link 
+              href="#social-impact" 
+              className="block text-xl font-bold text-gray-900 hover:text-blue-600 border-b border-gray-100 pb-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Projects
+            </Link>
+            <Link 
               href="#contact" 
-              className="block text-2xl font-bold text-gray-900 hover:text-blue-600"
+              className="block text-xl font-bold text-gray-900 hover:text-blue-600 border-b border-gray-100 pb-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </Link>
-             <div className="pt-8 border-t border-gray-100">
-                <Link 
-                    href="#contact" 
-                    className="block w-full text-center px-5 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                >
-                    Book a Consultation
-                </Link>
-            </div>
         </div>
       )}
     </nav>

@@ -10,12 +10,21 @@ export interface EducationItem {
   export const educationData: EducationItem[] = [
     {
       id: 1,
-      role: "Bachelor of English Language and Literature",
-      company: "Universitas Muhammadiyah Malang",
-      period: "2004 - 2008",
+      role: "University",
+      company: "Gajayana University Malang: English Faculty",
+      period: "Graduated 2005",
       description:
         "",
       type: "education",
+    },
+    {
+      id: 2,
+      role: "Schooling",
+      company: "High School, Middle School, and Elementary School in Maospati",
+      period: "",
+      description:
+        "",
+      type: "corporate",
     },
   ];
   

@@ -1,6 +1,6 @@
 
 
-import { Instagram, Linkedin, Mail } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -23,21 +23,25 @@ export default function Footer() {
 
             {/* Center: Social Icons */}
             <div className="flex gap-4 w-full md:w-auto justify-center md:absolute md:left-1/2 md:-translate-x-1/2 md:bottom-2">
-                 <a href="#" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="Instagram">
+                 <a href="https://www.instagram.com/eva_lastiani/" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="Instagram Personal">
                     <Instagram className="size-6" />
                  </a>
-                 <a href="#" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="TikTok">
+                 <a href="https://www.instagram.com/englishclass_by_egefoundation/" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="Instagram Education">
+                    <Instagram className="size-6" />
+                 </a>
+                 <a href="https://www.tiktok.com/@itsmeeva" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="TikTok It's Me Eva">
                     {/* Custom TikTok SVG */}
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-6">
                         <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
                     </svg>
                  </a>
-                 <a href="#" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="LinkedIn">
-                    <Linkedin className="size-6" />
+                 <a href="https://www.tiktok.com/@englishclass_by_misseva" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="TikTok English Class by Miss Eva">
+                    {/* Custom TikTok SVG */}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-6">
+                        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                    </svg>
                  </a>
-                 <a href="mailto:rohmatchoiruly@gmail.com" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="Email">
-                    <Mail className="size-6" />
-                 </a>
+
             </div>
             
 
