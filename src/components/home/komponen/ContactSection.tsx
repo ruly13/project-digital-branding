@@ -20,7 +20,7 @@ export default function ContactSection() {
                      </div>
                      <div>
                         <p className="font-bold text-[#111318]">WhatsApp</p>
-                        <p className="text-sm text-[#616f89]">+62 812-3456-7890</p>
+                        <p className="text-sm text-[#616f89]">+62 822-3115-1511 / +62 878-4462-4760</p>
                      </div>
                   </div>
 
