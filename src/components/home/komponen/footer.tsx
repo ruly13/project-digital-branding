@@ -29,7 +29,7 @@ export default function Footer() {
                  <a href="https://www.instagram.com/englishclass_by_egefoundation/" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="Instagram Education">
                     <Instagram className="size-6" />
                  </a>
-                 <a href="https://www.tiktok.com/@itsmeeva" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="TikTok It's Me Eva">
+                 <a href="https://www.tiktok.com/@its.me.eva90?_r=1&_t=ZS-93p2Iz0mn3Z" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="TikTok It's Me Eva">
                     {/* Custom TikTok SVG */}
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-6">
                         <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
