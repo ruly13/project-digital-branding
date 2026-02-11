@@ -55,9 +55,9 @@ export default function CertificationsSection() {
                                 
                                 {/* Overlay & Action */}
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-                                    <button className="bg-white text-slate-900 px-4 py-2 rounded-lg font-medium shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all">
+                                    <span className="bg-white text-slate-900 px-4 py-2 rounded-lg font-medium shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all cursor-pointer">
                                         View Certificate
-                                    </button>
+                                    </span>
                                 </div>
                             </div>
 
@@ -85,7 +85,7 @@ export default function CertificationsSection() {
             {/* POPUP MODAL */}
             {selectedCert && (
                 <div 
-                    className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity duration-300"
+                    className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity duration-300"
                     onClick={() => setSelectedCert(null)}
                 >
                     <div 
