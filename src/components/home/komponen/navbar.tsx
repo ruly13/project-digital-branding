@@ -22,6 +22,7 @@ export default function Navbar() {
           <Link href="#education" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Education</Link>
           <Link href="#certifications" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Certifications</Link>
           <Link href="#social-impact" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Projects</Link>
+          <Link href="#testimonials" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Testimonials</Link>
           <Link href="#contact" className="text-sm font-bold text-[#616f89] hover:text-primary transition-colors">Contact</Link>
         </div>
 
@@ -78,6 +79,13 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
+            </Link>
+            <Link 
+              href="#testimonials" 
+              className="block text-xl font-bold text-gray-900 hover:text-blue-600 border-b border-gray-100 pb-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Testimonials
             </Link>
             <Link 
               href="#contact" 

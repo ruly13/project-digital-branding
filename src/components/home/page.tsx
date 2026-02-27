@@ -7,6 +7,7 @@ import ExperienceSection from "./komponen/ExperienceSection";
 import EducationSection from "./komponen/EducationSection";
 import CertificationsSection from "./komponen/CertificationsSection";
 import SocialImpactSection from "./komponen/SocialImpactSection";
+import TestimonialSection from "./komponen/testimoni";
 import ContactSection from "./komponen/ContactSection";
 import Footer from "./komponen/footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
             <EducationSection />
             <CertificationsSection />
             <SocialImpactSection />
+            <TestimonialSection />
             <ContactSection />
             <Footer />
         </main>
