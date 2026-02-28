@@ -7,20 +7,23 @@ const testimonials = [
     id: 1,
     role: "Student",
     author: "Nazhifa",
+    image: "/img/foto-testimoni/NaZhifa.jpeg",
     details: "9th grade - MTSN Kota Madiun",
     quote: "I have been taking English lessons with Miss Eva since I was in 5th grade, and now I am in 9th grade and still learning with her. Miss Eva teaches many materials such as Grammar, Reading, Listening, and Speaking. My favorite part is Speaking because Miss Eva is very good at speaking English, so I learn a lot of new vocabulary from her. She is very patient and always motivates me to be confident when speaking English. She always tells me not to be shy and not to be afraid of making mistakes. Miss Eva often makes games related to the lesson we are learning that day. Because of that, the lessons are easier to understand and more interesting. She also gives role-play projects or speaking practice based on the topic we study. So, I not only learn the theory but also practice speaking directly. I am happy to learn English with Miss Eva because she makes learning fun and helps me become more confident in speaking English."
   },
   {
     id: 2,
     role: "Parent",
-    author: "Ibu Ima",
+    author: "Mrs. Ima",
+    image: "/img/foto-testimoni/Ima.jpeg",
     details: "A house wife - Magetan",
     quote: "My child has been taking English class with Miss Eva since Elementary 6th grade, at that time to prepare for graduation from elementary school and to enter junior high school. Now my child is in 8th grade and still learning with Miss Eva. Miss Eva teaches the lessons patiently and helps a lot whenever my child has school assignments or projects. She also encourages her students to speak in English during the lessons. This helps train and improve their confidence in speaking. I am grateful for Miss Eva’s guidance because she supports my child not only in understanding the material but also in building confidence in using English."
   },
   {
     id: 3,
     role: "Neighborhood",
-    author: "Ibu Candra",
+    author: "Mrs. Candra",
+    image: "/img/foto-testimoni/Candra.jpeg",
     details: "A house wife - Magetan",
     quote: "I am a housewife and I run a small shop. I have known Miss Eva for a long time. She is known as a creative and dedicated English teacher. Miss Eva often invites mothers and teenagers in our neighborhood to join English learning activities. The purpose is to increase knowledge and empower women in our community. She teaches us to practice speaking English in simple and easy ways, using daily topics that are easy to understand. Because of that, we feel more confident and motivated to learn. We are thankful to have Miss Eva in our community because she cares about education and encourages women to keep learning."
   }
@@ -58,9 +61,17 @@ export default function TestimonialSection() {
               </blockquote>
               
               <div className="flex items-center mt-auto border-t border-slate-100 pt-6">
-                <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg mr-4">
-                  {testimonial.author.charAt(0)}
-                </div>
+                {testimonial.image ? (
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.author} 
+                    className="size-12 rounded-full object-cover mr-4 shrink-0"
+                  />
+                ) : (
+                  <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg mr-4 shrink-0">
+                    {testimonial.author.charAt(0)}
+                  </div>
+                )}
                 <div>
                   <h4 className="font-bold text-[#111318]">{testimonial.author}</h4>
                   <p className="text-xs font-semibold text-primary uppercase tracking-wide my-0.5">{testimonial.role}</p>
