@@ -31,7 +31,7 @@ export default function ExpertiseSection() {
             <div className="text-center mb-10">
               <h2 className="text-[#111318] text-3xl font-bold leading-tight tracking-[-0.015em]">Expertise</h2>
               <p className="text-[#616f89] mt-2 max-w-2xl mx-auto">
-                Teaching is my passion. I love sharing knowledges, not only English knowledges but also all things relate to something to improve life values.
+                Teaching is my passion. I love sharing knowledge, not only English knowledge but also all things related to something to improve life values.
               </p>
             </div>
 
