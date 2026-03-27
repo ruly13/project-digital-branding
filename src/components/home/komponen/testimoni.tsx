@@ -25,7 +25,7 @@ const testimonials = [
     author: "Mrs. Candra",
     image: "/img/foto-testimoni/Candra.jpeg",
     details: "A house wife - Magetan",
-    quote: "I am a housewife and I run a small shop. I have known Miss Eva for a long time. She is known as a creative and dedicated English teacher. Miss Eva often invites mothers and teenagers in our neighborhood to join English learning activities. The purpose is to increase knowledge and empower women in our community. She teaches us to practice speaking English in simple and easy ways, using daily topics that are easy to understand. Because of that, we feel more confident and motivated to learn. We are thankful to have Miss Eva in our community because she cares about education and encourages women to keep learning."
+    quote: "I am a housewife and I run a small shop. I have known Miss Eva for a long time. She is known as a creative and dedicated English teacher. Miss Eva often invites houswives, women and youth in our neighborhood to join English learning activities. The purpose is to increase knowledge and empower women in our community. She teaches us to practice speaking English in simple and easy ways, using daily topics that are easy to understand. Because of that, we feel more confident and motivated to learn. We are thankful to have Miss Eva in our community because she cares about education and encourages women to keep learning."
   }
 ];
 

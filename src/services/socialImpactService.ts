@@ -142,7 +142,7 @@ export const socialImpactData: ProjectItem[] = [
     title: "ENGLISH FOR COMMUNITY",
     subtitle: "2026 • Community Development",
     description: [
-      "This community-based English program is designed for local residents, including TPA (Qur’anic Learning Center) students, mothers, and local youth.",
+      "This community-based English program is designed for local residents, including TPA (Qur’anic Learning Center) students, housewives, women, and local youth.",
       "The program aims to improve basic English knowledge and enhance speaking skills through fun, practical, and interactive activities. The activities focus on everyday communication to help participants gain confidence in using English in daily life.",
     ],
     modules: [
@@ -159,7 +159,13 @@ export const socialImpactData: ProjectItem[] = [
       "Demonstrate improved confidence in speaking English in front of others.",
       "Apply English in simple real-life contexts, such as school, home, or community activities.",
     ],
-    images: [],
+    images: [
+      "/img/IMG_20260228_155734.jpg",
+      "/img/IMG_20260315_101904.jpg",
+      "/img/IMG_20260315_101929.jpg",
+      "/img/Screenshot_2026-03-24-07-09-35-562_com.miui.videoplayer-edit.jpg",
+      "/img/Screenshot_2026-03-24-07-25-37-020_com.miui.videoplayer-edit.jpg"
+    ],
   },
 ];
 
