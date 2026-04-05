@@ -1,3 +1,10 @@
+# Project Digital Branding
+
+**Contact:**
+- [Eva Lastiani - LinkedIn](https://www.linkedin.com/in/eva-lastiani-973a833aa)
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
