@@ -1,6 +1,5 @@
 
-
-import { Instagram } from 'lucide-react';
+import { Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -41,7 +40,9 @@ export default function Footer() {
                         <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
                     </svg>
                  </a>
-
+                 <a href="https://www.linkedin.com/in/eva-lastiani-973a833aa" className="text-[#94a3b8] hover:text-white transition-colors" aria-label="LinkedIn">
+                    <Linkedin className="size-6" />
+                 </a>
             </div>
             
 
