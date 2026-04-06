@@ -35,6 +35,17 @@ export default function ContactSection() {
                         <p className="text-sm text-[#616f89]">missevalastiani@gmail.com</p>
                      </div>
                   </div>
+
+                  {/* LinkedIn */}
+                  <a href="https://www.linkedin.com/in/eva-lastiani-973a833aa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl bg-white border border-[#e5e7eb] shadow-sm hover:shadow-md transition-shadow cursor-pointer group block">
+                     <div className="size-12 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-100 transition-colors">
+                        <i className="material-symbols-outlined text-2xl">link</i>
+                     </div>
+                     <div>
+                        <p className="font-bold text-[#111318]">LinkedIn</p>
+                        <p className="text-sm text-[#616f89]">Eva Lastiani</p>
+                     </div>
+                  </a>
                </div>
             </div>
 
