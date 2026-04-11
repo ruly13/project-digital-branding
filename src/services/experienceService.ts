@@ -21,7 +21,7 @@ export const experienceData: ExperienceItem[] = [
   },
   {
     id: 1,
-    role: "BRANCH MANAGER & ENGLISH TEACHER",
+    role: "BRANCH MANAGER & ENGLISH EDUCATOR",
     company: "ENGLISHONE MADIUN",
     period: "2011 - 2024",
     description:
@@ -31,7 +31,7 @@ export const experienceData: ExperienceItem[] = [
   },
   {
     id: 2,
-    role: "ENGLISH TEACHER",
+    role: "ENGLISH EDUCATOR",
     company: "ION MADIUN",
     period: "2011",
     description:
@@ -41,7 +41,7 @@ export const experienceData: ExperienceItem[] = [
   },
   {
     id: 3,
-    role: "ENGLISH TEACHER",
+    role: "ENGLISH EDUCATOR",
     company: "KUMON MALANG",
     period: "2009",
     description:
@@ -51,7 +51,7 @@ export const experienceData: ExperienceItem[] = [
   },
   {
     id: 4,
-    role: "ENGLISH TEACHER",
+    role: "ENGLISH EDUCATOR",
     company: "ENGLISHLAND MALANG",
     period: "2008",
     description:
@@ -91,7 +91,7 @@ export const experienceData: ExperienceItem[] = [
   },
   {
     id: 8,
-    role: "CUSTOMER CARE & ENGLISH TEACHER",
+    role: "CUSTOMER CARE & ENGLISH EDUCATOR",
     company: "CENTER OF ENGLISH LEARNING (CEL) MALANG",
     period: "2003",
     description:
