@@ -4,9 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const images = [
-    "/img/foto utama 4/slider1.jpg",
-    "/img/foto utama 4/slider2.jpeg",
-    "/img/foto utama 4/slider3.jpeg"
+    "/img/aboutme.jpeg"
 ];
 
 export default function AboutSection() {
